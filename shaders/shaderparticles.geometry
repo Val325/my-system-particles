@@ -1,0 +1,24 @@
+
+#version 330 core
+layout (points) in;
+layout (points, max_vertices = 1) out;
+
+uniform float time;
+
+in VS_OUT {
+    vec3 color;
+} gs_in[];
+
+in VS_OUT_SIZE {
+    float size;
+} part_size[];
+
+out vec3 fColor;
+
+void main() {
+    gl_PointSize = part_size[0].size; 
+    fColor = gs_in[0].color; // gs_in[0] since there's only one input vertex
+    gl_Position = gl_in[0].gl_Position;
+    EmitVertex();
+    EndPrimitive();
+}  

@@ -1,0 +1,4 @@
+/home/ghost/progects/opengl/systemparticles/CMakeFiles/glad.dir
+/home/ghost/progects/opengl/systemparticles/CMakeFiles/particlesOpenGl.dir
+/home/ghost/progects/opengl/systemparticles/CMakeFiles/edit_cache.dir
+/home/ghost/progects/opengl/systemparticles/CMakeFiles/rebuild_cache.dir
